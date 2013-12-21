@@ -11,11 +11,14 @@
     <EditText
         android:id="@+id/input"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/inputHint"
+        android:gravity="right"
+        android:textSize="80sp"/>
 
     <LinearLayout
         android:id="@+id/layout_operators"
-        android:layout_height="240dp"
+        android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:orientation="vertical"
         android:layout_below="@id/input"
@@ -23,30 +26,28 @@
         android:layout_alignParentRight="true">
 
         <Button android:id="@+id/button_mul"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
+            style="@style/StyleOperators"
             android:text="@string/button_mul" />
 
         <Button android:id="@+id/button_minus"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
+            style="@style/StyleOperators"
             android:text="@string/button_sub" />
 
         <Button android:id="@+id/button_add"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
+            style="@style/StyleOperators"
             android:text="@string/button_add" />
 
         <Button android:id="@+id/button_eq"
             android:layout_width="90dp"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:textSize="40sp"
             android:text="@string/button_eq" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_numbers"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:layout_below="@id/input"
         android:orientation="vertical">
@@ -58,11 +59,11 @@
             <Button android:id="@+id/button_del"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
+                android:textSize="50sp"
                 android:text="@string/button_del" />
 
             <Button android:id="@+id/button_div"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleOperators"
                 android:text="@string/button_div" />
          </LinearLayout>
 
@@ -71,18 +72,15 @@
             android:layout_width="wrap_content">
 
             <Button android:id="@+id/button_1"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_1" />
 
             <Button android:id="@+id/button_2"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_2" />
 
             <Button android:id="@+id/button_3"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_3" />
         </LinearLayout>
 
@@ -91,18 +89,15 @@
             android:layout_width="wrap_content">
 
             <Button android:id="@+id/button_4"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_4" />
 
             <Button android:id="@+id/button_5"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_5" />
 
             <Button android:id="@+id/button_6"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_6" />
         </LinearLayout>
 
@@ -111,18 +106,15 @@
             android:layout_width="wrap_content">
 
             <Button android:id="@+id/button_7"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_7" />
 
             <Button android:id="@+id/button_8"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_8" />
 
             <Button android:id="@+id/button_9"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_9" />
         </LinearLayout>
 
@@ -131,18 +123,15 @@
             android:layout_width="wrap_content">
 
             <Button android:id="@+id/button_neg"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleOperators"
                 android:text="@string/button_neg" />
 
             <Button android:id="@+id/button_0"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleNumbers"
                 android:text="@string/button_0" />
 
             <Button android:id="@+id/button_dec"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
+                style="@style/StyleOperators"
                 android:text="@string/button_dec" />
         </LinearLayout>
 
